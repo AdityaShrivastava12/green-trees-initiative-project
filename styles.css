@@ -60,7 +60,6 @@ body{
     font-weight: bold;
   }
   #intro{
-    border: 1px solid black;
     position: relative;
     top: var(--navheight);
     height: 870px;
@@ -236,7 +235,6 @@ body{
     flex-direction: column;
     position: relative;
     top: var(--navheight);
-    border: 1px solid black;
   }
   #take-action-today > a{
     align-self: flex-start;
@@ -255,7 +253,6 @@ body{
     z-index: 2;
   }
   .child-grid-container{
-    border: 1px solid white;
     width: 80%;
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -313,7 +310,6 @@ body{
     justify-content: space-around;
     align-items: center;
     width: 100%;
-    border: 1px solid black;
     row-gap: 10px;
   }
   .text14px{
