@@ -62,8 +62,8 @@ body{
   #intro{
     position: relative;
     top: var(--navheight);
-    height: 870px;
-    min-height: 870px;
+    height: 770px;
+    min-height: 770px;
     background-color: #C1F7D5;
   }
   #intro-div1{
@@ -84,7 +84,7 @@ body{
     align-self: center;
     width: 85%;
     background-color: white;
-    margin-bottom: 50px;
+    margin-bottom: 150px;
   }
 
   .hashtag1{
@@ -125,7 +125,7 @@ body{
     align-items: center;
   }
   #intro-div2 > h4{
-    margin-top: -11%;
+    margin-top: ;
   }
   .grid-container{
     display: grid;
