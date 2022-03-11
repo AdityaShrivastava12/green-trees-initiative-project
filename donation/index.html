@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="https://use.typekit.net/iuc4dnc.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <p>The Green</p>
+    <p>Trees Initiative</p>
+  </header>
+
+  <main id="desktop-view-main">
+    <form action="#">
+      <section id="your-information" class="width-90percent flex-container-column">
+        <h2 class="width-100percent">
+          Your information
+        </h2>
+        <div class="flex-container-row justify-space-between width-100percent">
+          <div class="flex-container-column width-45percent">
+            <label for="first-name">FIRST NAME</label>
+            <input type="text" id="first-name" name="first-name" placeholder="First name" class="width-100percent">
+          </div>
+          <div class="flex-container-column width-45percent">
+            <label for="last-name">LAST NAME</label>
+            <input type="text" id="last-name" name="last-name" placeholder="Last name">
+          </div>
+        </div>
+        <div class="flex-container-column width-100percent">
+          <label for="street-address">STREET ADDRESS</label>
+          <input type="text" id="street-address" name="street-address" placeholder="STREET ADDRESS">
+        </div>
+        <div class="flex-container-row width-100percent justify-space-between">
+          <div class="flex-container-column width-35percent">
+            <label for="city">CITY</label>
+            <input type="text" id="city" name="city" placeholder="City">
+          </div>
+          <div class="flex-container-column width-35percent align-center">
+            <label for="state">STATE</label>
+            <select name="state" id="state">
+              <option value="All">All</option>
+              <option value="Gujarat">Gujarat</option>
+              <option value="Punjab">Punjab</option>
+              <option value="Karnataka">Karnataka</option>
+              <option value="Kerela">Kerela</option>
+            </select>
+          </div>
+          <div class="flex-container-column width-30percent">
+            <label for="zip-code">ZIP CODE</label>
+            <input type="text" pattern="\d*" maxlength="6" id="zip-code" name="zip-code" placeholder="ZIP">
+          </div>
+        </div>
+        <div class="flex-container-column width-100percent">
+          <label for="email-address">EMAIL ADDRESS</label>
+          <input type="email" id="email-address" name="email-address" placeholder="EMAIL ADDRESS">
+        </div>
+      </section>
+      <section id="payment-information" class="flex-container-column width-90percent">
+        <h2 class="width-100percent">
+          Payment Information
+        </h2>
+        <div class="flex-container-column width-100percent">
+          <label for="credit-card"> CREDIT CARD NUMBER</label>
+          <input type="tel" id="credit-card" maxlength="16" name="credit-card" placeholder="Credit Card Number">
+        </div>
+        <div class="flex-container-row width-100percent justify-space-between">
+          <div class="flex-container-column width-50percent">
+            <label for="expiry" class="width-100percent letter-spacing-3px">EXPIRATION DATE</label>
+            <div class="flex-container-row width-100percent justify-space-between">
+              <input type="text" pattern="\d*" id="expiry" name="expiry" max="12" maxlength="2" placeholder="MM" class="width-40percent">
+              <input type="text" pattern="\d*" id="expiry" name="expiry" maxlength="4" placeholder="YYYY" class="width-40percent">
+            </div>
+          </div>
+          <div class="flex-container-column width-40percent">
+            <label for="security" class="margin-right">SECURITY CODE</label>
+            <input type="text" pattern="\d*" maxlength="3" id="security" name="security" placeholder="CVV">
+          </div>
+        </div>
+      </section>
+      <section id="payment-process" class="width-90percent flex-container-column justify-space-between">
+        <h2>Click the button to confirm your donation of $10, recurring monthly.</h2>
+        <input type="submit" value="Process Payment" id="payment-process-button">
+        <a href="#" id="go-back">Go back</a>
+      </section>
+    </form>
+    <h1>
+      GIVE HOPE TO THOSE WHO NEED IT MOST
+    </h1>
+  </main>
+
+  <main id="tab-mobile-view-main">
+    <h1>
+      GIVE HOPE TO THOSE WHO NEED IT MOST
+    </h1>
+    <form action="#">
+      <section id="your-information" class="width-90percent flex-container-column">
+        <h2 class="width-100percent">
+          Your information
+        </h2>
+        <div class="flex-container-row justify-space-between width-100percent">
+          <div class="flex-container-column width-45percent">
+            <label for="first-name">FIRST NAME</label>
+            <input type="text" id="first-name" name="first-name" placeholder="First name" class="width-100percent">
+          </div>
+          <div class="flex-container-column width-45percent">
+            <label for="last-name">LAST NAME</label>
+            <input type="text" id="last-name" name="last-name" placeholder="Last name">
+          </div>
+        </div>
+        <div class="flex-container-column width-100percent">
+          <label for="street-address">STREET ADDRESS</label>
+          <input type="text" id="street-address" name="street-address" placeholder="STREET ADDRESS">
+        </div>
+        <div class="flex-container-row width-100percent justify-space-between">
+          <div class="flex-container-column width-35percent">
+            <label for="city">CITY</label>
+            <input type="text" id="city" name="city" placeholder="City">
+          </div>
+          <div class="flex-container-column width-35percent align-center">
+            <label for="state">STATE</label>
+            <select name="state" id="state">
+              <option value="All">All</option>
+              <option value="Gujarat">Gujarat</option>
+              <option value="Punjab">Punjab</option>
+              <option value="Karnataka">Karnataka</option>
+              <option value="Kerela">Kerela</option>
+            </select>
+          </div>
+          <div class="flex-container-column width-30percent">
+            <label for="zip-code">ZIP CODE</label>
+            <input type="text" pattern="\d*" maxlength="6" id="zip-code" name="zip-code" placeholder="ZIP">
+          </div>
+        </div>
+        <div class="flex-container-column width-100percent">
+          <label for="email-address">EMAIL ADDRESS</label>
+          <input type="email" id="email-address" name="email-address" placeholder="EMAIL ADDRESS">
+        </div>
+      </section>
+      <section id="payment-information" class="flex-container-column width-90percent">
+        <h2 class="width-100percent">
+          Payment Information
+        </h2>
+        <div class="flex-container-column width-100percent">
+          <label for="credit-card"> CREDIT CARD NUMBER</label>
+          <input type="tel" id="credit-card" maxlength="16" name="credit-card" placeholder="Credit Card Number">
+        </div>
+        <div class="flex-container-row width-100percent justify-space-between">
+          <div class="flex-container-column width-50percent border">
+            <label for="expiry" class="width-100percent letter-spacing-3px">EXPIRATION DATE</label>
+            <div class="flex-container-row width-100percent justify-space-between">
+              <input type="text" pattern="\d*" id="expiry" name="expiry" max="12" maxlength="2" placeholder="MM" class="width-40percent">
+              <input type="text" pattern="\d*" id="expiry" name="expiry" maxlength="4" placeholder="YYYY" class="width-40percent">
+            </div>
+          </div>
+          <div class="flex-container-column width-40percent">
+            <label for="security" class="margin-right">SECURITY CODE</label>
+            <input type="text" pattern="\d*" maxlength="3" id="security" name="security" placeholder="CVV">
+          </div>
+        </div>
+      </section>
+      <section id="payment-process" class="width-90percent flex-container-column border justify-space-between">
+        <h2>Click the button to confirm your donation of $10, recurring monthly.</h2>
+        <input type="submit" value="Process Payment" id="payment-process-button">
+        <a href="#" id="go-back">Go back</a>
+      </section>
+    </form>
+  </main>
+
+  <footer id="mobile-view-footer" class="structure">
+    <div class="grid-container" id="footer-div-1">
+      <h3 class="header-footer-h">
+        The Green Trees Initiative
+      </h3>
+      <div class="cfl">
+        <p class="fontStyle-headerfooter fontSize11px">CONTACT US</p>
+        <p class="fontStyle-headerfooter" id="contact-us-p">
+          123 Anywhere st. <br>
+          Cityname,NY 11206 <br>
+          (123)456-7890 <br>
+          conact@npo.org
+        </p>
+      </div>
+      <div class="cfl">
+        <p class="fontStyle-headerfooter fontSize11px">
+          FOLLOW US
+        </p>
+        <ul class="noListStyle">
+          <li><a href="#" class="fontStyle-headerfooter">Facebook</a></li>
+          <li><a href="#" class="fontStyle-headerfooter">Twitter</a></li>
+          <li><a href="#" class="fontStyle-headerfooter">Instagram</a></li>
+          <li><a href="#" class="fontStyle-headerfooter">Medium</a></li>
+        </ul>
+      </div>
+      <div class="cfl">
+        <p class="fontStyle-headerfooter fontSize11px">LEARN MORE</p>
+        <ul class="noListStyle lineheight">
+          <li><a href="#" class="fontStyle-headerfooter">The issue</a></li>
+          <li><a href="#" class="fontStyle-headerfooter">How we help</a></li>
+          <li><a href="#" class="fontStyle-headerfooter">Get involved</a></li>
+          <li><a href="#" class="fontStyle-headerfooter">Latest news</a></li>
+        </ul>
+      </div>
+    </div>
+    <h2 class="hashtag1" id="footer-hashtag">
+      # STOP CLIMATE CHANGE
+    </h2>
+  </footer>
+
+  <footer id="tab-view-footer">
+    <h3 class="header-footer-h tab-view-footer-elements">
+      The Green Trees Initiative
+    </h3>
+    <div class="column-flex tab-view-footer-elements">
+      <div class="cfl">
+        <p class="fontStyle-headerfooter fontSize11px">CONTACT US</p>
+        <p class="fontStyle-headerfooter" id="contact-us-p">
+          123 Anywhere st. <br>
+          Cityname,NY 11206 <br>
+          (123)456-7890 <br>
+          conact@npo.org
+        </p>
+      </div>
+      <div class="cfl">
+        <p class="fontStyle-headerfooter fontSize11px">LEARN MORE</p>
+        <a href="#" class="fontStyle-headerfooter">The issue</a>
+        <a href="#" class="fontStyle-headerfooter">How we help</a>
+        <a href="#" class="fontStyle-headerfooter">Get involved</a>
+        <a href="#" class="fontStyle-headerfooter">Latest news</a>
+      </div>
+    </div>
+    <div class="column-flex tab-view-footer-elements">
+      <div class="cfl">
+        <p class="fontStyle-headerfooter fontSize11px">
+          FOLLOW US
+        </p>
+        <a href="#" class="fontStyle-headerfooter">Facebook</a>
+        <a href="#" class="fontStyle-headerfooter">Twitter</a>
+        <a href="#" class="fontStyle-headerfooter">Instagram</a>
+        <a href="#" class="fontStyle-headerfooter">Medium</a>
+      </div>
+      <h2 class="hashtag1" id="footer-hashtag">
+        # STOP CLIMATE CHANGE
+      </h2>
+    </div>
+  </footer>
+
+  <footer id="desktop-view-footer">
+    <h3 class="header-footer-h tab-view-footer-elements desktop-view-footer-element" id="desktop-view-footer-h">
+      The Green <br>
+      Trees Initiative
+    </h3>
+    <div class="cfl desktop-view-footer-element">
+      <p class="fontStyle-headerfooter fontSize11px cfl-h">CONTACT US</p>
+      <p class="fontStyle-headerfooter" id="contact-us-p">
+        123 Anywhere st. <br>
+        Cityname,NY 11206 <br>
+        (123)456-7890 <br>
+        conact@npo.org
+      </p>
+    </div>
+    <div class="cfl desktop-view-footer-element">
+      <p class="fontStyle-headerfooter fontSize11px cfl-h">LINKS</p>
+      <a href="#" class="fontStyle-headerfooter">The issue</a>
+      <a href="#" class="fontStyle-headerfooter">How we help</a>
+      <a href="#" class="fontStyle-headerfooter">Get involved</a>
+      <a href="#" class="fontStyle-headerfooter">Latest news</a>
+    </div>
+    <div class="cfl desktop-view-footer-element">
+      <p class="fontStyle-headerfooter fontSize11px cfl-h">
+        FOLLOW US
+      </p>
+      <a href="#" class="fontStyle-headerfooter">Facebook</a>
+      <a href="#" class="fontStyle-headerfooter">Twitter</a>
+      <a href="#" class="fontStyle-headerfooter">Instagram</a>
+      <a href="#" class="fontStyle-headerfooter">Medium</a>
+    </div>
+    <h2 class="hashtag1 desktop-view-footer-element" id="footer-hashtag">
+      # STOP CLIMATE CHANGE
+    </h2>
+  </footer>
+</body>
+
+</html>
