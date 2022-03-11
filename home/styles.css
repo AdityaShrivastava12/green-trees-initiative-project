@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-  width: 100vw;
   font-family: Helvetica;
 }
 
@@ -13,11 +12,21 @@ body {
   text-decoration: none;
 }
 
-@media only screen and (max-width: 376px) {
-  * {
-    /* border: 1px solid black; */
-  }
+header {
+  width: 100%;
+}
 
+.hashtag-white {
+  font-family: flood-std;
+  color: white;
+}
+
+.hashtag-blue {
+  font-family: flood-std;
+  color: #354463;
+}
+
+@media only screen and (max-width: 376px) {
   :root {
     --navheight: 160px;
   }
@@ -25,7 +34,6 @@ body {
   header {
     position: fixed;
     height: var(--navheight);
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -93,13 +101,19 @@ body {
     margin-bottom: 150px;
   }
 
-  .hashtag1 {
+  /* .hashtag1 {
     align-self: flex-start;
     font-family: flood-std;
     margin-left: 5%;
     font-size: 44px;
     width: 70%;
     color: white;
+  } */
+  .hashtag-mobile-tab {
+    align-self: flex-start;
+    margin-left: 5%;
+    font-size: 44px;
+    width: 70%;
   }
 
   #intro-div1>article>p, #intro-div1>article>a {
@@ -155,7 +169,6 @@ body {
   }
 
   #what-we-do {
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -332,7 +345,6 @@ body {
     top: var(--navheight);
     justify-content: space-around;
     align-items: center;
-    width: 100%;
     row-gap: 10px;
   }
 
@@ -341,7 +353,6 @@ body {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
     row-gap: 10px;
   }
 
@@ -352,7 +363,6 @@ body {
     top: var(--navheight);
     justify-content: space-around;
     align-items: center;
-    width: 100%;
     row-gap: 10px;
   }
 
@@ -362,7 +372,6 @@ body {
 
   .heading2 {
     padding: 10px 30px;
-    border: 1px solid black;
     margin-bottom: -30px;
     z-index: 2;
     font-size: 14px;
@@ -534,7 +543,6 @@ body {
   header {
     position: fixed;
     height: var(--navheight);
-    width: 100%;
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -608,17 +616,18 @@ body {
     background-position: 30% -100px;
     display: flex;
     flex-direction: column;
-    justify-content: ;
   }
 
-  .hashtag1 {
+  #intro-div1-stop {
+    margin-left: 7%;
+  }
+
+  .hashtag-mobile-tab {
     align-self: flex-start;
-    font-family: flood-std;
     margin-left: 5%;
-    margin-top: 5%;
     font-size: 44px;
-    width: 40%;
-    color: white;
+    width: 70%;
+    font-weight: lighter;
   }
 
   #intro-div1>article {
@@ -670,10 +679,6 @@ body {
     align-items: center;
   }
 
-  #intro-div2>h4 {
-    margin-top: ;
-  }
-
   .grid-container {
     display: grid;
     grid-template-areas: "content1 content2"
@@ -693,7 +698,6 @@ body {
   }
 
   #what-we-do {
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -809,7 +813,7 @@ body {
     background-image: url("./images/home/did-you-know-background-1");
     background-repeat: no-repeat;
     background-size: auto 120%;
-    background-position: 45% -200px;
+    background-position: -600px -100px;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -888,7 +892,6 @@ body {
     top: var(--navheight);
     justify-content: space-around;
     align-items: flex-start;
-    width: 100%;
     row-gap: 10px;
   }
 
@@ -962,9 +965,13 @@ body {
     align-items: center;
   }
 
+  .margin-top-zero {
+    margin-top: 0;
+  }
+
   #event-latest-news-tab-view>h2 {
-    align-self: flex-start;
-    margin-left: 5%;
+    align-self: center;
+    width: 85%;
   }
 
   #event-latest-news-tab-view h3 {
@@ -974,7 +981,8 @@ body {
   .tab-view-news-outerdiv {
     display: flex;
     justify-content: space-between;
-    width: 90%;
+    width: 80%;
+    margin-bottom: 20px;
   }
 
   .tab-view-outerdiv-div {
@@ -1007,7 +1015,7 @@ body {
   #subscribe {
     background-color: #C1F7D5;
     position: relative;
-    top: 140px;
+    top: var(--navheight);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1048,35 +1056,48 @@ body {
     display: flex;
     position: relative;
     top: 140px;
-    border: 1px solid black;
     justify-content: space-around;
-    align-items: stretch;
     height: 400px;
+  }
+
+  #tab-view-footer>h3 {
+    align-self: flex-start;
+    margin-left: 5%;
   }
 
   .column-flex {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .tab-view-footer-elements p {
+    margin: 0;
+  }
+
+  #learn-more-section {
+    margin-bottom: 25%;
   }
 
   .header-footer-h {
     color: #354463;
     font-weight: bold;
     font-size: 22px;
-    margin-top: 6%;
-    margin-left: 2%;
   }
 
   #footer-hashtag {
     color: #354463;
-    width: 100%;
-    margin: 0 0 -14% 0;
+    margin: 0 0 0 0;
   }
 
   .fontStyle-headerfooter {
     font-size: 14px;
     color: #354463;
+  }
+
+  #contact-us, #learn-more-footer, #follow-us {
+    margin-bottom: 10px;
   }
 
   .cfl {
@@ -1088,7 +1109,7 @@ body {
 
   .tab-view-footer-elements {
     width: 30%;
-    width: 100%;
+    margin: 7% auto;
   }
 
   #contact-us-p {
@@ -1132,7 +1153,6 @@ body {
   header {
     position: fixed;
     height: var(--navheight);
-    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -1147,8 +1167,6 @@ body {
     font-weight: bold;
     font-size: 22px;
   }
-
-  header>p, #navbar {}
 
   #navbar {
     width: 60%;
@@ -1187,22 +1205,27 @@ body {
   #intro-div1 {
     display: flex;
     justify-content: space-around;
-    width: 100%;
     height: 98vh;
     background-image: url('./images/image1');
     background-size: 140% auto;
     background-repeat: no-repeat;
-    background-position: 0 -100px;
+    background-position: 0 -200px;
     align-items: center;
   }
 
-  .hashtag1 {
-    font-family: flood-std;
+  .hashtag-desktop-view {
     margin-left: 5%;
     margin-top: 5%;
     font-size: 72px;
     width: 30%;
-    color: white;
+  }
+
+  .font-size-18px {
+    font-size: 18px;
+  }
+
+  .font-size-72px {
+    font-size: 72px;
   }
 
   #intro-div1>article {
@@ -1362,6 +1385,10 @@ body {
     margin-top: 5%;
   }
 
+  #take-action-today-link {
+    margin: 0;
+  }
+
   #take-action-today {
     background-image: url("./images/home/did-you-know-background-1");
     background-repeat: no-repeat;
@@ -1391,8 +1418,9 @@ body {
     align-items: flex-start;
     row-gap: 20px;
     width: 30%;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
     margin-right: 10%;
+    margin-top: 5%;
   }
 
   #did-you-know-container>h4 {
@@ -1414,6 +1442,7 @@ body {
 
   #climate-change {
     width: 25%;
+    margin-top: 7%;
   }
 
   .child-grid-container>h2, .child-grid-container>img, .child-grid-container>p {
@@ -1536,6 +1565,10 @@ body {
     font-size: 28px;
   }
 
+  .margin-top-zero {
+    margin-top: 0;
+  }
+
   .tab-view-news-outerdiv {
     display: flex;
     justify-content: center;
@@ -1615,7 +1648,6 @@ body {
     align-items: center;
     position: relative;
     top: var(--navheight);
-    width: 100%;
   }
 
   .desktop-view-footer-element {
@@ -1632,7 +1664,7 @@ body {
 
   #desktop-view-footer-h {
     align-self: flex-start;
-    margin-left: 2%;
+    margin-left: 5%;
   }
 
   #contact-us-p {
@@ -1655,6 +1687,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+  }
+
+  #contact-us, #follow-us, #links {
+    width: 10%;
   }
 
   .cfl-h {

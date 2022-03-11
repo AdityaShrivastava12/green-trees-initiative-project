@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-  width: 100vw;
   font-family: helvetica;
 }
 
@@ -207,7 +206,6 @@ body {
     top: var(--navheight);
     justify-content: space-around;
     align-items: center;
-    width: 100%;
     row-gap: 10px;
   }
 
@@ -534,7 +532,6 @@ body {
 
   .tab-view-footer-elements {
     width: 30%;
-    width: 100%;
   }
 
   #contact-us-p {
@@ -543,10 +540,6 @@ body {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1440px) {
-  .border {
-    border: 1px solid black;
-  }
-
   #mobile-view-footer, #tab-mobile-view-main, #tab-view-footer {
     display: none;
   }
@@ -634,7 +627,6 @@ body {
   }
 
   main {
-    border: 1px solid red;
     position: relative;
     top: var(--navheight);
     display: flex;
@@ -764,7 +756,6 @@ body {
     align-items: center;
     position: relative;
     top: var(--navheight);
-    width: 100%;
   }
 
   #desktop-view-footer>h3 {
